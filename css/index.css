@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.form-select {
+  color: #fff;
+
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+}
+.page-bg {
+  background-color: #12151c;
+}
+.card {
+  background-color: #1b202b;
+}
+.select_height {
+  height: 50px;
+}
+.border-style {
+  border: 1px solid #2c3342;
+}
+.placeholder-style::placeholder {
+  color: #6b7587;
+}
+.placeholder-style2::placeholder {
+  color: #6b7587;
+  text-align: right;
+}
+.form-result {
+  background-color: #161b25;
+}
+.form-result:focus {
+  background-color: #161b25;
+  color: white;
+}
+select option {
+  color: #fff;
+  background: #1b202b;
+}
+.form-select,
+.form-select:focus {
+  color: #fff;
+  color-scheme: dark;
+}

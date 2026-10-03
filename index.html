@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Translator</title>
+  </head>
+  <body>
+    <div
+      class="vh-100 page-bg d-flex justify-content-center align-items-center"
+    >
+      <div class="container">
+        <div class="row p-4 justify-content-center">
+          <div
+            class="card d-flex flex-column p-3 rounded-3 gap-3 border-style col-lg-8 col-md-10 col-12"
+          >
+            <div><p class="text-light fs-4 fw-bold">Translator</p></div>
+            <div class="d-flex justify-content-between gap-2">
+              <select
+                name="from"
+                class="w-50 bg-transparent form-control form-select select_height border-style from"
+              ></select>
+              <select
+                name="to"
+                class="w-50 bg-transparent form-control form-select select_height border-style to"
+              ></select>
+            </div>
+            <div class="d-flex justify-content-between gap-2">
+              <textarea
+                style="height: 150px"
+                placeholder="Type or paste text"
+                class="w-50 bg-transparent border-style form-control placeholder-style inValue text-light"
+              ></textarea>
+              <textarea
+                style="height: 150px"
+                readonly
+                placeholder="Translation"
+                class="w-50 border-style form-control placeholder-style2 form-result outValue text-light"
+              ></textarea>
+            </div>
+            <div>
+              <button class="btn btn-primary w-100 translateBtn">
+                Translate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
