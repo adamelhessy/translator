@@ -130,6 +130,7 @@ translateBtn.addEventListener("click", () => {
     .then((response) => response.json())
     .then((data) => {
       outValue.value = data.responseData.translatedText;
+      console.log(data);
     })
     .catch(() => {
       outValue.value = "Translation failed. Please try again.";
