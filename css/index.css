@@ -29,6 +29,7 @@
 }
 .form-result {
   background-color: #161b25;
+  text-align: right;
 }
 .form-result:focus {
   background-color: #161b25;
