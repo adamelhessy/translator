@@ -2,7 +2,7 @@ const from = document.querySelector(".from");
 const to = document.querySelector(".to");
 const inValue = document.querySelector(".inValue");
 const outValue = document.querySelector(".outValue");
-const translateBtn = document.querySelector(".translateBtn");
+const form_content = document.querySelector(".form_content");
 const API = (input, from, to) =>
   `https://api.mymemory.translated.net/get?q=${input.value}&langpair=${from.value}|${to.value}`;
 const countries = {
@@ -115,7 +115,8 @@ to.innerHTML = SelectTemplate(countries);
 from.value = "en-GB";
 to.value = "ar-SA";
 
-translateBtn.addEventListener("click", () => {
+form_content.addEventListener("submit", (e) => {
+  e.preventDefault();
   const Input = inValue.value.trim();
   if (from.value === to.value) {
     outValue.value = "Choose two different languages";
@@ -130,7 +131,6 @@ translateBtn.addEventListener("click", () => {
     .then((response) => response.json())
     .then((data) => {
       outValue.value = data.responseData.translatedText;
-      console.log(data);
     })
     .catch(() => {
       outValue.value = "Translation failed. Please try again.";
